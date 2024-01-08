@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="stopImageCollection"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/start_b"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="8dp"
+        android:onClick="startCollecting"
+        android:text="2. START SENSORS"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/stop_b"
+        android:layout_width="110dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="53dp"
+        android:onClick="stopCollecting"
+        android:text="3. STOP SENSORS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="274dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        android:onClick="collectionFolder"
+        android:text="1. CREATE A COLLECTION FOLDER"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_input" />
+
+    <EditText
+        android:id="@+id/user_input"
+        android:layout_width="291dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="NAME CURRENT COLLECTION"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/collection_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Collection"
+        app:layout_constraintStart_toStartOf="@+id/start_text"
+        app:layout_constraintTop_toBottomOf="@+id/stop_text" />
+
+    <TextView
+        android:id="@+id/stop_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Stop"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/start_text"
+        app:layout_constraintTop_toBottomOf="@+id/start_text" />
+
+    <TextView
+        android:id="@+id/start_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Start"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SOUND_reading" />
+
+    <TextView
+        android:id="@+id/LIGHT_available"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Light Status"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/LIGHT_reading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Light Reading"
+        app:layout_constraintStart_toStartOf="@+id/LIGHT_available"
+        app:layout_constraintTop_toBottomOf="@+id/LIGHT_available" />
+
+
+    <TextView
+        android:id="@+id/SOUND_available"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Sound Sensor STATUS"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LIGHT_reading" />
+
+    <TextView
+        android:id="@+id/SOUND_reading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Sound Reading"
+        app:layout_constraintStart_toStartOf="@+id/SOUND_available"
+        app:layout_constraintTop_toBottomOf="@+id/SOUND_available" />
+
+    <Button
+        android:id="@+id/startImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:onClick="startImageCollection"
+        android:text="START IMAGE COLLECTION"
+        app:icon="@android:drawable/ic_menu_camera"
+        app:iconSize="35dp"
+        app:iconTint="#2EFF00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_b" />
+
+    <Button
+        android:id="@+id/stopImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="stopImageCollection"
+        android:text="STOP IMAGE COLLECTION"
+        app:icon="@android:drawable/ic_menu_close_clear_cancel"
+        app:iconSize="35dp"
+        app:iconTint="#E91E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startImage" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="335dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="8dp"
+        android:text="HINT: Leave the Box below EMPTY to assign current Date and Time as current collection Name and CLICK the 1st button 👇👇👇"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/collection_name"
+        app:layout_constraintTop_toBottomOf="@+id/collection_name" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

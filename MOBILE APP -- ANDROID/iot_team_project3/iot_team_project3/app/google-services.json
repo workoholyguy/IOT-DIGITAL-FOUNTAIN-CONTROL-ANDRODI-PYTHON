@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "853675662834",
+    "project_id": "iot-2-aafad",
+    "storage_bucket": "iot-2-aafad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853675662834:android:7f743aaa5e9b044c539f6b",
+        "android_client_info": {
+          "package_name": "com.example.iot_team_project3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoBcdwL7pOYDg544bP6-EY1DAtl8Svxnk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
