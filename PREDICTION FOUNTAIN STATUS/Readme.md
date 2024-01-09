@@ -1,4 +1,4 @@
-# IoT Team Project - Predict fountain status in real time
+# IoT Team Project - Predict fountain status in real-time (Missing Train Model ".pt" file)
 
 This program, part of the IoT Team Project, is implemented using the Python language, actively monitoring data in Firestore, and providing real-time predictions for the fountain's overall status, fountain light status, and fountain music status. The following is its directory structure:
 
